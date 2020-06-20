@@ -6,6 +6,7 @@ module.exports.logger = async (event) => {
     statusCode: 200,
     body: JSON.stringify({
       message: "Serverless CICD version 1.0",
+      author: "Michael Phan",
       version: "1.0",
       timestamp: moment().unix(),
     }),
