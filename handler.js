@@ -7,7 +7,12 @@ module.exports.logger = async (event) => {
     body: JSON.stringify({
       message: "Serverless CICD version 1.0",
       author: "Michael Phan",
-      version: "1.0",
+      version: "3.0",
+      changelog: {
+        date: new Date().toDateString(),
+        version: "3.0.1",
+        changes: ["a", "b", "c"],
+      },
       timestamp: moment().unix(),
     }),
   }
